@@ -77,13 +77,15 @@ setcurrentUser(u)
 
     const options = {
       key: currentUser.razorpayid,
-      amount:"amount",
+      amount:amount,
       currency: "INR",
       name: "Get Me A Chai",
       description: "Support your creator",
       image: "https://example.com/your_logo",
       order_id: orderId,
-      callback_url: `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
+      //callback_url: `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
+      callback_url: "https://get-me-a-chai-obv5.vercel.app/api/paymentverify",
+      redirect: true,
      prefill: {
   name: paymentform.name || "Anonymous",
   email: "gaurav.kumar@example.com",
