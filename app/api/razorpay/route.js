@@ -43,8 +43,9 @@ const secret = user.razorpaysecret
       );
 
      return NextResponse.redirect(
-  `${process.env.NEXT_PUBLIC_URL}/${updatedPayment.to_user}?paymentdone=true`
+  `https://get-me-a-chai-obv5.vercel.app/${updatedPayment.to_user}?paymentdone=true`
 );
+
 
 
     } else {
