@@ -153,7 +153,7 @@ const Dashboard = () => {
               value={form.username || ""}
               onChange={handleChange}
               type="text"
-              placeholder="Change username for landing payment page"
+              placeholder="Enter username "
               name="username"
               id="username"
               className="block w-full p-2 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-600 focus:outline-none focus:ring-2 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"

@@ -84,8 +84,9 @@ setcurrentUser(u)
       image: "https://example.com/your_logo",
       order_id: orderId,
       //callback_url: `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
-     callback_url: "https://get-me-a-chai-obv5.vercel.app/api/paymentverify",
+   callback_url: "https://get-me-a-chai-obv5.vercel.app/api/paymentverifynow",
 redirect: false,
+
 
      prefill: {
   name: paymentform.name || "Anonymous",
