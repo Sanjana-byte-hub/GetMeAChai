@@ -9,8 +9,8 @@ export const POST = async (req) => {
     await connectDB();
 
     
-    let body = await req.formData();
-    body = Object.fromEntries(body); 
+    let body = await req.json();
+ 
 
     
     let payment = await Payment.findOne({ oid: body.razorpay_order_id });
